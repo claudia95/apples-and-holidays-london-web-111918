@@ -60,6 +60,10 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
+  array = holiday_hash[holiday].map do |holiday, supplies|
+    supplies
+  end
+  array.flatten
 
 end
 
